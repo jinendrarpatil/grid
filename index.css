@@ -1,0 +1,140 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+ * {
+	 box-sizing: border-box;
+}
+ body {
+	 /* background-image: linear-gradient(to bottom right, #1e1b2d, #00b894); */
+	 -webkit-font-smoothing: antialiased;
+	 -moz-osx-font-smoothing: grayscale;
+	 height: 100vh;
+	 font-family: 'Open Sans', sans-serif;
+}
+ .container {
+
+	 width: 100%;
+	 padding: 1rem;
+}
+
+ .row {
+	 margin: auto auto;
+}
+
+ .alternate-card {
+	 float: left;
+	 padding: 1rem;
+	 min-width: 350px;
+}
+
+ .alternate-card .menu-content::before, .alternate-card .menu-content::after {
+	 content: '';
+	 display: table;
+}
+ .alternate-card .menu-content::after {
+	 clear: both;
+}
+ .alternate-card .menu-content li {
+	 display: inline-block;
+}
+ .alternate-card .menu-content a {
+	 color: #fff;
+}
+
+ .alternate-card .wrapper {
+	 background-color: #fff;
+	 height: 400px;
+	 position: relative;
+	 overflow: hidden;
+	 box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+}
+ .alternate-card .wrapper:hover .data {
+	 transform: translateY(0px);
+}
+
+.details {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #333;
+  color: #fff;
+  
+}
+
+.details h1 {
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.18);
+  margin-top: 10px;
+  text-align: center;
+  color: sandybrown;
+}
+
+.details img {
+  width:300px;
+   height:200px;
+   margin-left: 10px;
+}
+
+.details h2,h3{
+  font-size: 1rem;
+  margin-top: 15px;
+  margin-left: 15px;
+  text-align: start;
+  letter-spacing: 1px;
+}
+
+#contractor{
+color: sandybrown;
+font-size: large;
+
+}
+
+.details p{
+  font-size: 0.8rem;
+  margin-top: 15px;
+  am
+  margin-right: 15px;
+  text-align: center;
+  text-decoration: 1px white underline;
+}
+
+ .alternate-card .data {
+	 position: absolute;
+	 bottom: 0;
+	 width: 100%;
+	 transform: translateY(calc(100% + 1em));
+	 transition: transform 0.3s;
+}
+ .alternate-card .data .content {
+	 padding: 1em;
+	 position: relative;
+	 z-index: 1;
+}
+ 
+ .alternate-card .title {
+	 margin-top: 10px;
+}
+ 
+
+ .alternate-card input[type='checkbox']:checked + .menu-content {
+	 transform: translateY(-60px);
+}
+
+
+.content {
+	 background-color: white;
+	 color: black;
+	 box-shadow: 0 5px 30px 10px rgba(0, 0, 0, 0.3);
+   position: relative;
+   }
+
+.alternate-card .text {
+    height: 455px;
+    margin: 0;
+ }
+
+ .title{
+	 color: black;
+}
+
+
